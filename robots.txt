@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://diabetesabolfazlmirzaeeeeeee-website.onrender.com/sitemap.xml
+Sitemap: https://diabetesabolfazlmirzaeeeeeeei-website.onrender.com/sitemap.xml
