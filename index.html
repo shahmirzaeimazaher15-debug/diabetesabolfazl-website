@@ -3,114 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <title>دیابت چیست؟ علائم، درمان، پیشگیری | ابوالفضل شاهمیرزایی</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <meta name="description" content="دیابت یک بیماری مزمن است که بر سطح قند خون تأثیر می‌گذارد. با انواع دیابت، علائم، پیشگیری و درمان آشنا شوید." />
 
-  <!-- فونت فارسی زیبای وزیر -->
+  <!-- فونت فارسی وزیر -->
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
 
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Vazir', sans-serif;
       background: #fdfdfd;
       color: #333;
-      line-height: 1.8;
-      padding: 20px;
+      line-height: 1.7;
+      padding: 10px;
       direction: rtl;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-    p {
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
-    ul {
-      margin-bottom: 15px;
-      padding-left: 20px;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-style: italic;
-      color: #666;
-    }
-    section {
-      margin-bottom: 30px;
-      padding: 15px;
-      border-radius: 10px;
-      background: #f9f9f9;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    img { max-width: 100%; height: auto; display: block; margin: 0 auto 15px; border-radius: 10px; }
+    h1, h2 { text-align: center; margin: 20px 0; color: #2c3e50; }
+    p, li { font-size: 17px; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 15px; }
+    a { color: #2980b9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 40px; text-align: center; font-style: italic; color: #666; padding-bottom: 20px; }
+    section { margin-bottom: 25px; padding: 15px; border-radius: 10px; background: #f9f9f9; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    #datetime { text-align: center; font-size: 15px; color: #555; margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      body { padding: 8px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+      p, li { font-size: 16px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- بنر بالا -->
+  <img src="https://images.unsplash.com/photo-1588776814546-1ee4e6f244d3?auto=format&fit=crop&w=1200&q=80" alt="سلامت و دیابت">
+
+  <!-- تاریخ و ساعت -->
+  <div id="datetime"></div>
+
   <h1>دیابت چیست؟</h1>
 
   <section>
-    <p>دیابت یک بیماری متابولیک مزمن است که بدن نمی‌تواند سطح قند خون را به‌طور طبیعی تنظیم کند. دیابت نوع ۱ و نوع ۲ رایج‌ترین انواع آن هستند.</p>
-    <p>علائم شامل تشنگی زیاد، تکرر ادرار، خستگی و تاری دید است. کنترل دیابت با تغذیه سالم، ورزش و دارو ممکن است.</p>
-  </section>
-
-  <section>
-    <h2>دیابت نوع ۱ و ۲</h2>
-    <ul>
-      <li>نوع ۱: معمولاً در کودکی یا نوجوانی، تولید انسولین ناکافی.</li>
-      <li>نوع ۲: بیشتر در بزرگسالان، مقاومت به انسولین یا تولید ناکافی آن.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>پیشگیری و سبک زندگی</h2>
-    <p>تغذیه متعادل، ورزش منظم، کاهش وزن و کنترل استرس برای پیشگیری و کنترل دیابت نوع ۲ ضروری است.</p>
-  </section>
-
-  <section>
-    <h2>دیابت بارداری</h2>
-    <p>دیابت بارداری در دوران بارداری ایجاد می‌شود و معمولاً پس از زایمان برطرف می‌شود. مراقبت پزشکی الزامی است.</p>
-  </section>
-
-  <section>
-    <h2>عوارض دیابت</h2>
-    <ul>
-      <li>آسیب چشم‌ها (رتینوپاتی)</li>
-      <li>آسیب کلیه‌ها (نفروپاتی)</li>
-      <li>آسیب اعصاب (نوروپاتی)</li>
-      <li>عوارض قلبی و عروقی</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>تکنولوژی و مدیریت دیابت</h2>
-    <p>استفاده از دستگاه‌های CGM، اپلیکیشن‌های موبایل و الگوریتم‌های هوش مصنوعی به کنترل دقیق‌تر دیابت کمک می‌کند.</p>
-  </section>
-
-  <section>
-    <h2>سلامت روان و حمایت اجتماعی</h2>
-    <p>استرس، اضطراب و افسردگی می‌تواند کنترل دیابت را سخت‌تر کند. حمایت خانواده، مشاوره و گروه‌های حمایتی مهم هستند.</p>
-  </section>
-
-  <section>
-    <h2>درمان‌های مکمل</h2>
-    <p>طب سوزنی، مدیتیشن و برخی گیاهان ممکن است مفید باشند اما جایگزین درمان پزشکی نمی‌شوند.</p>
+    <p>دیابت یک بیماری مزمن متابولیک است که توانایی بدن در تنظیم سطح قند خون را مختل می‌کند. این بیماری می‌تواند منجر به عوارض جدی در چشم، کلیه، قلب و اعصاب شود.</p>
+    <p>دیابت نوع ۱ بیشتر در کودکان و نوجوانان رخ می‌دهد و ناشی از تولید ناکافی انسولین است، در حالی که نوع ۲ در بزرگسالان شایع بوده و به دلیل مقاومت به انسولین یا تولید ناکافی آن ایجاد می‌شود.</p>
+    <p>دیابت بارداری در دوران حاملگی دیده می‌شود و معمولاً پس از زایمان برطرف می‌شود، اما نیاز به پایش دقیق دارد.</p>
+    <p>علائم شامل تشنگی شدید، تکرر ادرار، خستگی، تاری دید و گاهی کاهش وزن ناگهانی است.</p>
+    <p>کنترل دیابت از طریق رژیم غذایی سالم، فعالیت بدنی منظم و دارو ممکن می‌شود.</p>
+    <p>پیشگیری دیابت نوع ۲ با کاهش وزن، تغذیه متعادل، ورزش و مدیریت استرس امکان‌پذیر است.</p>
+    <p>دستگاه‌های CGM و اپلیکیشن‌های موبایل به کنترل دقیق‌تر قند خون کمک می‌کنند.</p>
+    <p>سلامت روان و حمایت اجتماعی نقش مهمی در مدیریت دیابت دارند و استرس می‌تواند سطح قند خون را بالا ببرد.</p>
+    <p>درمان‌های مکمل مانند مدیتیشن و یوگا ممکن است مفید باشند اما جایگزین درمان پزشکی نیستند.</p>
+    <p>رژیم غذایی سالم شامل میوه، سبزیجات، پروتئین کافی و محدود کردن قند و چربی‌های ناسالم است.</p>
+    <p>ورزش روزانه حداقل ۳۰ دقیقه توصیه می‌شود.</p>
+    <p>کنترل فشار خون و کلسترول برای کاهش ریسک عوارض قلبی-عروقی ضروری است.</p>
+    <p>آموزش بیماران و خانواده‌ها باعث پایبندی بهتر به درمان و سبک زندگی سالم می‌شود.</p>
+    <p>معاینات منظم چشم و کلیه‌ها برای تشخیص زودهنگام عوارض مهم است.</p>
+    <p>گروه‌های حمایتی و مشاوره روانشناسی می‌توانند به کاهش استرس و افسردگی کمک کنند.</p>
+    <p>اندازه‌گیری HbA1c هر ۳-۶ ماه میزان کنترل بلندمدت قند خون را نشان می‌دهد.</p>
+    <p>کنترل قند خون قبل و بعد از غذا، ورزش و مصرف دارو باید دقیق انجام شود.</p>
+    <p>مراقبت از پاها برای جلوگیری از زخم‌ها و عفونت‌ها اهمیت دارد.</p>
+    <p>استفاده از یادآورها و اپلیکیشن‌ها به نظم در مصرف دارو و پایش قند کمک می‌کند.</p>
+    <p>آب کافی، خواب مناسب و مدیریت استرس برای سلامت کلی ضروری است.</p>
+    <p>مشارکت فعال بیمار در درمان و پایش خود کلید موفقیت در کنترل دیابت است.</p>
   </section>
 
   <footer>
     از توجه شما به سایت و مطالب آن ممنونم | ابوالفضل شاهمیرزایی | تابستان ۱۴۰۴
   </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
+      document.getElementById('datetime').textContent = now.toLocaleDateString('fa-IR', options) + ' - ' + now.toLocaleTimeString('fa-IR');
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
 
 </body>
 </html>
