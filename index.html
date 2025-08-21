@@ -4,107 +4,149 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>سبک زندگی سالم در دیابت</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 <style>
-  body {
-    font-family: Tahoma, sans-serif;
-    line-height: 1.6;
-    direction: rtl;
-    margin: 20px;
-    background-color: #fdfdfd;
-  }
-  h2 {
-    color: #2c3e50;
-    margin-top: 30px;
-  }
-  p {
-    margin-bottom: 10px;
-  }
-  .faq {
-    margin-top: 20px;
-  }
-  .faq-item {
-    margin-bottom: 15px;
-  }
-  button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 15px;
-  }
-  button:hover {
-    background-color: #2980b9;
-  }
-  #lifestyleContent {
-    display: none;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #fafafa;
-  }
+body { font-family: Tahoma, sans-serif; direction: rtl; margin:0; padding:0; background:#f4f6f8; color:#333; }
+header { background: linear-gradient(135deg,#3498db,#6dd5fa); color:white; text-align:center; padding:40px 20px; box-shadow:0 3px 8px rgba(0,0,0,0.15); }
+header h1 { margin:0; font-size:2.5rem; }
+header p { margin:10px 0 0; font-size:1.2rem; }
+#datetime { margin-top:10px; font-size:1rem; color:#f0f0f0; }
+.container { max-width:1000px; margin:auto; padding:20px; }
+button { background-color:#3498db; color:white; border:none; padding:12px 25px; cursor:pointer; border-radius:8px; font-size:1rem; margin:20px 0; transition:0.3s; }
+button:hover { background-color:#2980b9; }
+#lifestyleContent { display:none; margin-top:20px; }
+h2 { color:#2c3e50; margin-top:25px; text-align:center; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; margin-top:20px; }
+.card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s; display:flex; align-items:center; }
+.card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.2); }
+.card i { color:#3498db; font-size:1.5rem; margin-left:10px; }
+.faq-item { background:#eef3f7; margin:10px 0; padding:15px 20px; border-radius:10px; transition:background 0.3s; }
+.faq-item:hover { background:#d6e4f0; }
+.faq-item b { display:block; margin-bottom:5px; color:#2c3e50; }
+.comments { margin-top:40px; }
+.comment { background:#fff; margin:10px 0; padding:15px; border-radius:10px; box-shadow:0 1px 6px rgba(0,0,0,0.1); }
+.comment b { color:#3498db; }
+.comment-form textarea { width:100%; padding:12px; margin-top:10px; border-radius:8px; border:1px solid #ccc; resize:vertical; font-size:1rem; }
+.comment-form button { margin-top:10px; }
+footer { text-align:center; padding:15px 0; color:#555; font-size:0.9rem; margin-top:30px; }
 </style>
 </head>
 <body>
 
-<h1>سبک زندگی سالم در دیابت</h1>
-<p>دیابت نیازمند مراقبت‌های روزانه و تغییرات سبک زندگی است. رعایت نکات زیر می‌تواند به کنترل بهتر قند خون کمک کند:</p>
+<header>
+  <h1>سبک زندگی سالم در دیابت</h1>
+  <p>راهنمای جامع برای کنترل قند خون و بهبود کیفیت زندگی</p>
+  <div id="datetime"></div>
+</header>
 
-<button onclick="toggleLifestyle()">بیشتر درباره سبک زندگی بدانید</button>
+<div class="container">
+  <p>دیابت نیازمند مراقبت‌های روزانه و تغییرات سبک زندگی است. رعایت نکات زیر می‌تواند به کنترل بهتر قند خون کمک کند:</p>
 
-<div id="lifestyleContent">
-  <h2>نکات سبک زندگی سالم</h2>
-  <p>۱. خواب کافی و منظم داشته باشید (۷-۸ ساعت در شب).</p>
-  <p>۲. فعالیت بدنی منظم شامل پیاده‌روی، یوگا و شنا.</p>
-  <p>۳. وزن مناسب خود را حفظ کنید و از اضافه وزن جلوگیری کنید.</p>
-  <p>۴. رژیم غذایی متعادل با سبزیجات، پروتئین و فیبر کافی داشته باشید.</p>
-  <p>۵. مصرف نوشیدنی‌های شیرین و قندهای ساده را کاهش دهید.</p>
-  <p>۶. از دخانیات و مصرف الکل پرهیز کنید.</p>
-  <p>۷. استرس روزانه را مدیریت کنید با مدیتیشن یا تنفس عمیق.</p>
-  <p>۸. فشار خون و چربی خون خود را مرتب چک کنید.</p>
-  <p>۹. مصرف منظم داروهای تجویزی را فراموش نکنید.</p>
-  <p>۱۰. مراجعه منظم به پزشک و مشاوره تغذیه.</p>
+  <button onclick="toggleLifestyle()">مشاهده نکات سبک زندگی</button>
 
-  <h2>سوالات متداول (FAQ)</h2>
-  <div class="faq">
-    <div class="faq-item"><b>آیا دیابت ارثی است؟</b>
-      <p>ژنتیک نقش دارد اما سبک زندگی می‌تواند تاثیر زیادی در پیشگیری داشته باشد.</p>
+  <div id="lifestyleContent">
+    <h2>۵۰ نکته سبک زندگی سالم</h2>
+    <div class="cards">
+      <!-- 50 نکته کارت‌ها -->
+      <div class="card"><i class="ri-sun-line"></i> خواب کافی (۷-۸ ساعت شبانه)</div>
+      <div class="card"><i class="ri-run-line"></i> فعالیت بدنی منظم</div>
+      <div class="card"><i class="ri-weight-line"></i> حفظ وزن مناسب</div>
+      <div class="card"><i class="ri-leaf-line"></i> رژیم غذایی متعادل و فیبردار</div>
+      <div class="card"><i class="ri-no-smoking-line"></i> پرهیز از دخانیات و الکل</div>
+      <div class="card"><i class="ri-emotion-happy-line"></i> مدیریت استرس با مدیتیشن</div>
+      <div class="card"><i class="ri-heart-pulse-line"></i> کنترل فشار خون و چربی</div>
+      <div class="card"><i class="ri-health-line"></i> مصرف منظم داروها</div>
+      <div class="card"><i class="ri-apple-line"></i> مصرف میوه‌های کم‌قند</div>
+      <div class="card"><i class="ri-walk-line"></i> پیاده‌روی بعد از وعده‌ها</div>
+      <div class="card"><i class="ri-water-line"></i> نوشیدن آب کافی روزانه</div>
+      <div class="card"><i class="ri-car-line"></i> محدود کردن فست فود و غذاهای آماده</div>
+      <div class="card"><i class="ri-bowl-line"></i> مصرف سبزیجات در هر وعده</div>
+      <div class="card"><i class="ri-timer-line"></i> وعده‌های غذایی منظم</div>
+      <div class="card"><i class="ri-restaurant-line"></i> کاهش مصرف شکر و شیرینی</div>
+      <div class="card"><i class="ri-heart-line"></i> کنترل منظم ضربان قلب</div>
+      <div class="card"><i class="ri-sleep-line"></i> استراحت کوتاه روزانه</div>
+      <div class="card"><i class="ri-run-line"></i> ورزش‌های هوازی سبک</div>
+      <div class="card"><i class="ri-meditation-line"></i> تمرین تنفس عمیق</div>
+      <div class="card"><i class="ri-mental-health-line"></i> حفظ سلامت روان</div>
+      <div class="card"><i class="ri-drink-line"></i> کاهش مصرف نوشیدنی‌های شیرین</div>
+      <div class="card"><i class="ri-stethoscope-line"></i> مراجعه منظم به پزشک</div>
+      <div class="card"><i class="ri-medal-line"></i> حفظ انگیزه برای فعالیت روزانه</div>
+      <div class="card"><i class="ri-knife-line"></i> کنترل مصرف نمک</div>
+      <div class="card"><i class="ri-timer-2-line"></i> اندازه‌گیری قند خون در زمان‌های مشخص</div>
+      <div class="card"><i class="ri-hospital-line"></i> پیگیری نتایج آزمایش‌ها</div>
+      <div class="card"><i class="ri-cake-2-line"></i> محدود کردن شیرینی‌ها</div>
+      <div class="card"><i class="ri-restaurant-2-line"></i> انتخاب غذاهای سالم در رستوران</div>
+      <div class="card"><i class="ri-pie-chart-line"></i> کنترل میزان کربوهیدرات</div>
+      <div class="card"><i class="ri-mental-health-line"></i> حفظ آرامش در موقعیت‌های پر استرس</div>
+      <div class="card"><i class="ri-water-flash-line"></i> نوشیدن آب قبل از غذا</div>
+      <div class="card"><i class="ri-shopping-bag-line"></i> خرید مواد غذایی سالم</div>
+      <div class="card"><i class="ri-clipboard-line"></i> یادداشت رژیم و فعالیت‌ها</div>
+      <div class="card"><i class="ri-book-read-line"></i> آموزش مداوم درباره دیابت</div>
+      <div class="card"><i class="ri-fridge-line"></i> ذخیره غذاهای سالم در خانه</div>
+      <div class="card"><i class="ri-user-heart-line"></i> داشتن حمایت خانواده و دوستان</div>
+      <div class="card"><i class="ri-shield-check-line"></i> رعایت نکات بهداشتی</div>
+      <div class="card"><i class="ri-mental-health-line"></i> کنترل اضطراب و افسردگی</div>
+      <div class="card"><i class="ri-plant-line"></i> مصرف سبزیجات متنوع</div>
+      <div class="card"><i class="ri-dribbble-line"></i> دنبال کردن برنامه ورزشی منظم</div>
+      <div class="card"><i class="ri-tools-line"></i> استفاده از اپلیکیشن‌های مدیریت دیابت</div>
+      <div class="card"><i class="ri-heart-line"></i> تمرینات قلبی سبک</div>
+      <div class="card"><i class="ri-egg-line"></i> مصرف پروتئین کافی</div>
+      <div class="card"><i class="ri-contrast-drop-line"></i> حفظ تعادل میان کار و استراحت</div>
+      <div class="card"><i class="ri-lightbulb-line"></i> آگاهی از علائم هیپوگلیسمی</div>
+      <div class="card"><i class="ri-basketball-line"></i> شرکت در فعالیت‌های گروهی ورزشی</div>
+      <div class="card"><i class="ri-moon-line"></i> خواب قبل از نیمه شب</div>
+      <div class="card"><i class="ri-flashlight-line"></i> بررسی سطح قند خون قبل ورزش</div>
+      <div class="card"><i class="ri-hand-heart-line"></i> شرکت در برنامه‌های حمایتی دیابت</div>
+      <div class="card"><i class="ri-syringe-line"></i> مدیریت انسولین و داروها طبق دستور پزشک</div>
+      <div class="card"><i class="ri-gift-line"></i> تشویق خود برای پیشرفت‌های کوچک</div>
+      <div class="card"><i class="ri-leaf-line"></i> استفاده از سبزیجات ارگانیک در صورت امکان</div>
     </div>
-    <div class="faq-item"><b>بهترین ورزش برای دیابت چیست؟</b>
-      <p>پیاده‌روی، شنا و تمرینات سبک هوازی برای کنترل قند خون مناسب هستند.</p>
-    </div>
-    <div class="faq-item"><b>چه میوه‌هایی برای دیابت مناسب هستند؟</b>
-      <p>سیب، توت، پرتقال و کیوی در مقادیر معقول مناسب‌اند.</p>
-    </div>
-    <div class="faq-item"><b>آیا دیابتی‌ها می‌توانند روزه بگیرند؟</b>
-      <p>با مشورت پزشک و کنترل دقیق قند خون امکان‌پذیر است.</p>
-    </div>
-    <div class="faq-item"><b>دیابت روی بینایی چه تاثیری دارد؟</b>
-      <p>کنترل نکردن قند خون می‌تواند باعث مشکلات بینایی و رتینوپاتی شود.</p>
-    </div>
-    <div class="faq-item"><b>آیا داروهای گیاهی کمک می‌کنند؟</b>
-      <p>بعضی داروهای گیاهی مفید هستند، ولی نباید جایگزین داروهای اصلی شوند.</p>
-    </div>
-    <div class="faq-item"><b>تفاوت قند میوه با شیرینی چیست؟</b>
-      <p>قند میوه همراه با فیبر و ویتامین است و دیرتر باعث افزایش قند خون می‌شود.</p>
-    </div>
-    <div class="faq-item"><b>استرس چگونه روی قند خون تاثیر می‌گذارد؟</b>
-      <p>استرس باعث ترشح هورمون‌های افزایش‌دهنده قند خون می‌شود.</p>
-    </div>
-    <!-- می‌توانیم ۴۲ مورد دیگر هم اضافه کنیم تا به ۵۰ سطر برسد -->
+  </div>
+
+  <h2>سؤالات متداول</h2>
+  <div class="faq-item"><b>دیابت چیست؟</b> دیابت بیماری‌ای است که بدن در استفاده از انسولین مشکل دارد.</div>
+  <div class="faq-item"><b>چگونه می‌توان قند خون را کنترل کرد؟</b> با رژیم مناسب، ورزش منظم و مصرف دارو طبق تجویز پزشک.</div>
+  <div class="faq-item"><b>آیا ورزش برای بیماران دیابتی مفید است؟</b> بله، ورزش باعث بهبود حساسیت به انسولین و کنترل وزن می‌شود.</div>
+
+  <h2>نظرات کاربران</h2>
+  <div class="comments" id="commentsList"></div>
+
+  <div class="comment-form">
+    <textarea id="commentInput" rows="3" placeholder="نظر خود را بنویسید..."></textarea>
+    <button onclick="addComment()">ثبت نظر</button>
   </div>
 </div>
 
+<footer>
+  ساخته شده توسط ابوالفضل شاهمیرزایی تابستان سال 1404
+</footer>
+
 <script>
 function toggleLifestyle() {
-  const content = document.getElementById("lifestyleContent");
-  if(content.style.display === "none" || content.style.display === "") {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
+  const content = document.getElementById('lifestyleContent');
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+
+// نمایش تاریخ و ساعت زنده
+function updateDateTime() {
+  const now = new Date();
+  const options = { weekday: 'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
+  document.getElementById('datetime').textContent = now.toLocaleDateString('fa-IR', options);
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+// بخش نظرات
+function addComment() {
+  const input = document.getElementById('commentInput');
+  const text = input.value.trim();
+  if(text === '') return;
+  const commentList = document.getElementById('commentsList');
+  const div = document.createElement('div');
+  div.className = 'comment';
+  div.innerHTML = `<b>کاربر:</b> ${text}`;
+  commentList.prepend(div);
+  input.value = '';
 }
 </script>
 
