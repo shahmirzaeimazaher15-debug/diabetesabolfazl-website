@@ -1,258 +1,130 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>دیابت چیست؟ علائم، انواع، پیشگیری و درمان (راهنمای جامع ۱۴۰۴)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="دیابت چیست و چه علائمی دارد؟ راهنمای جامع دیابت (۱۴۰۴) شامل معرفی انواع دیابت، روش‌های پیشگیری، درمان و کنترل قند خون + توصیه‌های تغذیه‌ای و سبک زندگی سالم." />
-
-  <!-- فونت فارسی وزیر -->
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css">
-
+  <meta name="description" content="دیابت چیست و چه علائمی دارد؟ راهنمای جامع دیابت (۱۴۰۴) با معرفی انواع، روش‌های پیشگیری و درمان + توصیه‌های تغذیه‌ای و سبک زندگی سالم.">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Vazir', sans-serif;
-      background: #fdfdfd;
-      color: #333;
-      line-height: 1.7;
-      padding: 15px;
-      direction: rtl;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2, h3 { margin: 20px 0; color: #2c3e50; }
-    h1 { text-align: center; }
-    p, li { font-size: 17px; margin-bottom: 12px; }
-    ul { padding-right: 20px; margin-bottom: 15px; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { margin-top: 40px; text-align: center; font-style: italic; color: #666; padding-bottom: 20px; }
-    section { margin-bottom: 25px; padding: 15px; border-radius: 10px; background: #f9f9f9; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-    #datetime { text-align: center; font-size: 15px; color: #555; margin-bottom: 15px; }
-    .faq dt { font-weight: bold; margin-top: 10px; color: #e67e22; }
-    .faq dd { margin-bottom: 10px; margin-right: 10px; color: #34495e; }
-    .highlight { color: #e74c3c; font-weight: bold; }
-    .green { color: #27ae60; }
-    .blue { color: #3498db; }
-    .yellow { color: #f1c40f; }
-    .cta-button {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 15px;
-      background: #2980b9;
-      color: white;
-      text-align: center;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .cta-button:hover { background: #1a6f8f; }
-    .testimonial {
-      background: #fff3e0;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 20px 0;
-    }
-    nav {
-      background: #3498db;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover { text-decoration: underline; }
-    @media (max-width: 768px) {
-      body { padding: 10px; }
-      h1 { font-size: 24px; }
-      h2 { font-size: 20px; }
-      p, li { font-size: 16px; }
-    }
+    body { font-family: 'Vazirmatn', sans-serif; line-height: 1.8; background: #f9f9f9; margin: 0; padding: 0; }
+    header { background: #4CAF50; color: #fff; padding: 15px; text-align: center; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; }
+    section { background: #fff; margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 850px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h1, h2, h3 { color: #333; }
+    ul { padding-right: 20px; }
+    .faq h3 { cursor: pointer; }
+    .faq p { display: none; }
+    footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 30px; }
+    .cta { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #4CAF50; color: #fff; border-radius: 5px; text-decoration: none; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .good, .bad { padding: 15px; border-radius: 8px; }
+    .good { background: #e8f5e9; border: 1px solid #4CAF50; }
+    .bad { background: #ffebee; border: 1px solid #f44336; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>دیابت چیست؟ راهنمای جامع ۱۴۰۴</h1>
+    <nav>
+      <a href="#types">انواع دیابت</a>
+      <a href="#symptoms">علائم</a>
+      <a href="#prevention">پیشگیری</a>
+      <a href="#food">غذاهای مناسب و مضر</a>
+      <a href="#faq">سوالات متداول</a>
+    </nav>
+    <p id="datetime"></p>
+  </header>
 
-  <!-- منوی ناوبری -->
-  <nav>
-    <a href="#diabetes-intro">دیابت چیست؟</a>
-    <a href="#diabetes-types">انواع دیابت</a>
-    <a href="#diabetes-symptoms">علائم</a>
-    <a href="#diabetes-prevention">پیشگیری</a>
-    <a href="#diabetes-treatment">درمان</a>
-    <a href="#faq">سوالات</a>
-    <a href="#testimonials">نظرات</a>
-  </nav>
-
-  <!-- تاریخ و ساعت -->
-  <div id="datetime"></div>
-
-  <section id="diabetes-intro">
-    <h1 class="blue">دیابت چیست؟ راهنمای جامع ۱۴۰۴</h1>
-
-    <div class="motivational-banner" style="text-align: center; padding: 20px; background: #e8f8f5; border-radius: 10px; margin-bottom: 30px;">
-      <p style="font-size: 18px; color: #16a085;"><strong>با شناخت دیابت می‌توانید زندگی سالم‌تر و شادتری داشته باشید.</strong></p>
-      <a href="#diabetes-prevention" class="cta-button">راه‌های پیشگیری</a>
-      <a href="#diabetes-treatment" class="cta-button">روش‌های درمان</a>
-    </div>
-
-    <p>دیابت یک بیماری مزمن است که بر تنظیم قند خون تاثیر می‌گذارد. این بیماری می‌تواند عوارضی در چشم‌ها، کلیه‌ها، قلب و اعصاب ایجاد کند. منابع معتبر مانند <a href="https://www.who.int/health-topics/diabetes" target="_blank">سازمان جهانی بهداشت (WHO)</a> اطلاعات مفیدی در این زمینه ارائه کرده‌اند.</p>
-
-    <img src="diabetes-info.jpg" alt="اینفوگرافیک علائم دیابت" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:10px;">
-
+  <section id="intro">
+    <h2>دیابت چیست؟</h2>
+    <p>دیابت یکی از شایع‌ترین بیماری‌های متابولیک است که در اثر اختلال در تولید یا عملکرد انسولین به وجود می‌آید. در نتیجه، قند خون افزایش می‌یابد و در صورت کنترل‌نشدن، می‌تواند به عوارض جدی منجر شود.</p>
   </section>
 
-  <section id="diabetes-types">
-    <h2 class="blue">انواع دیابت</h2>
+  <section id="types">
+    <h2>انواع دیابت</h2>
     <h3>دیابت نوع ۱</h3>
-    <p>در این نوع، سیستم ایمنی سلول‌های تولیدکننده انسولین را تخریب می‌کند. افراد نیاز به تزریق انسولین دارند.</p>
+    <p>بیماری خودایمنی که در آن سلول‌های بتای پانکراس تخریب می‌شوند.</p>
     <h3>دیابت نوع ۲</h3>
-    <p>شایع‌ترین نوع دیابت که بیشتر در بزرگسالان رخ می‌دهد و ناشی از مقاومت به انسولین است.</p>
+    <p>شایع‌ترین نوع دیابت، مرتبط با سبک زندگی و مقاومت به انسولین.</p>
     <h3>دیابت بارداری</h3>
-    <p>در دوران بارداری ایجاد می‌شود و معمولاً بعد از زایمان برطرف می‌شود، ولی نیازمند مراقبت است.</p>
-    <h3>پیش‌دیابت</h3>
-    <p>مرحله‌ای که قند خون بالاتر از حد طبیعی است اما هنوز به دیابت نرسیده. یک هشدار جدی برای تغییر سبک زندگی.</p>
+    <p>معمولاً موقت است و در دوران بارداری رخ می‌دهد.</p>
   </section>
 
-  <section id="diabetes-symptoms">
-    <h2 class="blue">علائم دیابت</h2>
+  <section id="symptoms">
+    <h2>علائم دیابت</h2>
     <ul>
-      <li>تشنگی بیش از حد</li>
-      <li>تکرر ادرار (مخصوصاً شب‌ها)</li>
-      <li>خستگی و ضعف</li>
-      <li>تاری دید</li>
-      <li>کاهش وزن ناگهانی</li>
-      <li>بهبودی دیرهنگام زخم‌ها</li>
-    </ul>
-    <a href="#faq" class="cta-button">مشاهده سوالات متداول</a>
-  </section>
-
-  <section id="diabetes-prevention">
-    <h2 class="blue">پیشگیری از دیابت نوع ۲</h2>
-    <ul>
-      <li>حفظ وزن سالم</li>
-      <li>رژیم غذایی متعادل</li>
-      <li>فعالیت بدنی منظم (۳۰ دقیقه در روز)</li>
-      <li>مدیریت استرس و خواب کافی</li>
-    </ul>
-    <a href="#diabetes-treatment" class="cta-button">روش‌های درمان</a>
-  </section>
-
-  <section id="diabetes-treatment">
-    <h2 class="blue">درمان دیابت</h2>
-    <ul>
-      <li><strong>رژیم غذایی:</strong> کنترل مصرف کربوهیدرات و چربی.</li>
-      <li><strong>ورزش:</strong> افزایش حساسیت به انسولین.</li>
-      <li><strong>دارو:</strong> داروهای خوراکی یا انسولین.</li>
-      <li><strong>پایش قند خون:</strong> استفاده از گلوکومتر یا CGM.</li>
+      <li>تشنگی و تکرر ادرار</li>
+      <li>خستگی مداوم</li>
+      <li>کاهش وزن بدون دلیل</li>
+      <li>کُندی در بهبود زخم‌ها</li>
     </ul>
   </section>
 
-  <section id="faq">
-    <h2 class="blue">سوالات متداول</h2>
-    <dl class="faq">
-      <dt>دیابت چه انواعی دارد؟</dt>
-      <dd>دیابت نوع ۱، نوع ۲ و دیابت بارداری.</dd>
-      <dt>علائم دیابت چیست؟</dt>
-      <dd>تشنگی زیاد، تکرر ادرار، خستگی و کاهش وزن ناگهانی.</dd>
-      <dt>چگونه می‌توان از دیابت نوع ۲ پیشگیری کرد؟</dt>
-      <dd>با رژیم غذایی سالم، ورزش و مدیریت استرس.</dd>
-    </dl>
+  <section id="prevention">
+    <h2>روش‌های پیشگیری</h2>
+    <ul>
+      <li>رعایت رژیم غذایی سالم</li>
+      <li>ورزش منظم</li>
+      <li>کنترل وزن</li>
+      <li>چکاپ دوره‌ای</li>
+    </ul>
+    <a href="#food" class="cta">مشاهده غذاهای مناسب</a>
   </section>
 
-  <section id="testimonials">
-    <h2 class="blue">نظرات کاربران</h2>
-    <div id="testimonials-list"></div>
-    <form id="testimonialForm">
-      <input type="text" id="name" placeholder="نام شما" required>
-      <textarea id="comment" placeholder="نظر شما..." rows="3" required></textarea>
-      <button type="submit">ارسال نظر</button>
-    </form>
+  <section id="food">
+    <h2>غذاهای مناسب و مضر برای دیابت</h2>
+    <div class="two-col">
+      <div class="good">
+        <h3>غذاهای مناسب ✅</h3>
+        <ul>
+          <li>سبزیجات تازه (اسفناج، کلم بروکلی)</li>
+          <li>حبوبات (عدس، نخود)</li>
+          <li>غلات سبوس‌دار (جو دوسر، نان سبوس‌دار)</li>
+          <li>ماهی‌های چرب (سالمون، تن)</li>
+          <li>آجیل بدون نمک (بادام، گردو)</li>
+        </ul>
+      </div>
+      <div class="bad">
+        <h3>غذاهای مضر ❌</h3>
+        <ul>
+          <li>نوشیدنی‌های شیرین (نوشابه، آبمیوه صنعتی)</li>
+          <li>فست‌فود و غذاهای سرخ‌شده</li>
+          <li>نان سفید و برنج سفید</li>
+          <li>شیرینی‌ها و کیک‌های صنعتی</li>
+          <li>گوشت‌های فرآوری‌شده (سوسیس، کالباس)</li>
+        </ul>
+      </div>
+    </div>
+    <a href="#faq" class="cta">بیشتر درباره سبک زندگی بدانید</a>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>سوالات متداول</h2>
+    <h3>آیا دیابت درمان قطعی دارد؟</h3>
+    <p>در حال حاضر درمان قطعی وجود ندارد، اما با مدیریت سبک زندگی و دارو می‌توان آن را کنترل کرد.</p>
+    <h3>آیا کودکان هم ممکن است دیابت بگیرند؟</h3>
+    <p>بله، به‌خصوص دیابت نوع ۱ در کودکان شایع‌تر است.</p>
+  </section>
+
+  <section id="comments">
+    <h2>نظرات کاربران</h2>
+    <textarea id="commentBox" placeholder="نظر خود را بنویسید..."></textarea><br>
+    <button onclick="addComment()">ارسال نظر</button>
+    <div id="commentsList"></div>
   </section>
 
   <footer>
-    © ابوالفضل شاهمیرزایی | تابستان ۱۴۰۴
+    <p>ساخته شده توسط ابوالفضل شاهمیرزایی تابستان سال ۱۴۰۴</p>
   </footer>
 
   <script>
-    // تاریخ و ساعت زنده
-    function updateDateTime() {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
-      document.getElementById('datetime').textContent = now.toLocaleDateString('fa-IR', options) + ' - ' + now.toLocaleTimeString('fa-IR');
-    }
-    setInterval(updateDateTime, 1000);
-    updateDateTime();
+    function updateTime(){ document.getElementById('datetime').innerText=new Date().toLocaleString('fa-IR'); }
+    setInterval(updateTime,1000); updateTime();
 
-    // ذخیره نظرات
-    const testimonialsDiv = document.getElementById('testimonials-list');
-    const form = document.getElementById('testimonialForm');
-    function loadTestimonials() {
-      const stored = JSON.parse(localStorage.getItem('testimonials') || '[]');
-      testimonialsDiv.innerHTML = '';
-      stored.forEach(t => {
-        const div = document.createElement('div');
-        div.className = 'testimonial';
-        div.innerHTML = `«${t.comment}» - ${t.name}`;
-        testimonialsDiv.appendChild(div);
-      });
-    }
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const comment = document.getElementById('comment').value.trim();
-      if(name && comment) {
-        const stored = JSON.parse(localStorage.getItem('testimonials') || '[]');
-        stored.push({name, comment});
-        localStorage.setItem('testimonials', JSON.stringify(stored));
-        loadTestimonials();
-        form.reset();
-      }
-    });
-    loadTestimonials();
+    document.querySelectorAll('.faq h3').forEach(q=>{q.addEventListener('click',()=>{let p=q.nextElementSibling;p.style.display=p.style.display==='block'?'none':'block';});});
+
+    function addComment(){ let box=document.getElementById('commentBox'); let txt=box.value.trim(); if(txt!==''){ let div=document.createElement('div'); div.textContent=txt; document.getElementById('commentsList').appendChild(div); box.value=''; } }
   </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "دیابت چه انواعی دارد؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "دیابت نوع ۱، نوع ۲ و دیابت بارداری."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "علائم دیابت چیست؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "تشنگی زیاد، تکرر ادرار، خستگی و کاهش وزن ناگهانی."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "چگونه می‌توان از دیابت نوع ۲ پیشگیری کرد؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "با رژیم غذایی سالم، ورزش و مدیریت استرس."
-        }
-      }
-    ]
-  }
-  </script>
-
 </body>
 </html>
