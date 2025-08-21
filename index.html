@@ -2,15 +2,14 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>دیابت: علائم، انواع، پیشگیری و درمان | ابوالفضل شاهمیرزایی</title>
+  <title>دیابت چیست؟ علائم، انواع، پیشگیری و درمان (راهنمای جامع ۱۴۰۴)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="همه چیز درباره دیابت: از علائم و انواع دیابت گرفته تا روش‌های پیشگیری، درمان و کنترل قند خون. راهنمای جامع دیابت برای زندگی سالم‌تر.">
+  <meta name="description" content="دیابت چیست و چه علائمی دارد؟ راهنمای جامع دیابت (۱۴۰۴) شامل معرفی انواع دیابت، روش‌های پیشگیری، درمان و کنترل قند خون + توصیه‌های تغذیه‌ای و سبک زندگی سالم." />
 
   <!-- فونت فارسی وزیر -->
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css">
 
   <style>
-    /* استایل‌ها (همون استایل‌های قبلی شما) */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Vazir', sans-serif;
@@ -22,9 +21,10 @@
       max-width: 1000px;
       margin: auto;
     }
-    h1, h2 { text-align: center; margin: 20px 0; color: #2c3e50; }
+    h1, h2, h3 { margin: 20px 0; color: #2c3e50; }
+    h1 { text-align: center; }
     p, li { font-size: 17px; margin-bottom: 12px; }
-    ul { padding-left: 20px; margin-bottom: 15px; }
+    ul { padding-right: 20px; margin-bottom: 15px; }
     a { color: #2980b9; text-decoration: none; }
     a:hover { text-decoration: underline; }
     footer { margin-top: 40px; text-align: center; font-style: italic; color: #666; padding-bottom: 20px; }
@@ -32,16 +32,14 @@
     #datetime { text-align: center; font-size: 15px; color: #555; margin-bottom: 15px; }
     .faq dt { font-weight: bold; margin-top: 10px; color: #e67e22; }
     .faq dd { margin-bottom: 10px; margin-right: 10px; color: #34495e; }
-    
     .highlight { color: #e74c3c; font-weight: bold; }
     .green { color: #27ae60; }
     .blue { color: #3498db; }
     .yellow { color: #f1c40f; }
     .cta-button {
-      display: block;
-      width: 200px;
-      margin: 20px auto;
-      padding: 10px;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 15px;
       background: #2980b9;
       color: white;
       text-align: center;
@@ -58,25 +56,6 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin: 20px 0;
     }
-    .testimonial-form { margin-top: 20px; }
-    .testimonial-form input, .testimonial-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .testimonial-form button {
-      background: #2980b9;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .testimonial-form button:hover { background: #1a6f8f; }
-    /* منوی ناوبری */
     nav {
       background: #3498db;
       color: white;
@@ -106,124 +85,93 @@
   <nav>
     <a href="#diabetes-intro">دیابت چیست؟</a>
     <a href="#diabetes-types">انواع دیابت</a>
-    <a href="#diabetes-symptoms">علائم دیابت</a>
-    <a href="#diabetes-prevention">پیشگیری از دیابت</a>
-    <a href="#diabetes-treatment">درمان دیابت</a>
-    <a href="#faq">سوالات متداول</a>
-    <a href="#testimonials">نظرات کاربران</a>
+    <a href="#diabetes-symptoms">علائم</a>
+    <a href="#diabetes-prevention">پیشگیری</a>
+    <a href="#diabetes-treatment">درمان</a>
+    <a href="#faq">سوالات</a>
+    <a href="#testimonials">نظرات</a>
   </nav>
 
   <!-- تاریخ و ساعت -->
   <div id="datetime"></div>
 
   <section id="diabetes-intro">
-    <h1 class="blue">دیابت چیست؟ راهنمای جامع</h1>
+    <h1 class="blue">دیابت چیست؟ راهنمای جامع ۱۴۰۴</h1>
 
-    <!-- بنر انگیزشی -->
     <div class="motivational-banner" style="text-align: center; padding: 20px; background: #e8f8f5; border-radius: 10px; margin-bottom: 30px;">
-      <p style="font-size: 18px; color: #16a085;"><strong>آیا می‌دانید که با دانستن بیشتر درباره دیابت می‌توانید زندگی سالم‌تری داشته باشید؟</strong></p>
-      <a href="#learn-more" class="cta-button">بیشتر بیاموزید</a>
+      <p style="font-size: 18px; color: #16a085;"><strong>با شناخت دیابت می‌توانید زندگی سالم‌تر و شادتری داشته باشید.</strong></p>
+      <a href="#diabetes-prevention" class="cta-button">راه‌های پیشگیری</a>
+      <a href="#diabetes-treatment" class="cta-button">روش‌های درمان</a>
     </div>
 
-    <div id="learn-more">
-      <p>دیابت یک بیماری مزمن متابولیک است که توانایی بدن در تنظیم سطح قند خون را مختل می‌کند. این بیماری می‌تواند باعث عوارض جدی در چشم‌ها، کلیه‌ها، قلب و اعصاب شود.</p>
-      <p>دیابت نوع <span class="highlight">۱</span> معمولاً در کودکان و نوجوانان رخ می‌دهد و ناشی از تولید ناکافی انسولین است، در حالی که دیابت نوع <span class="highlight">۲</span> در بزرگسالان شایع است و به دلیل مقاومت به انسولین یا تولید ناکافی آن ایجاد می‌شود.</p>
-      <p>دیابت بارداری در دوران حاملگی ایجاد می‌شود و معمولاً پس از زایمان برطرف می‌شود، اما نیاز به پایش دقیق دارد.</p>
-      <p>علائم شامل تشنگی زیاد، تکرر ادرار، خستگی، تاری دید و گاهی <span class="highlight">کاهش وزن ناگهانی</span> است.</p>
-      <p>کنترل دیابت با رژیم غذایی سالم، ورزش منظم و دارو امکان‌پذیر است.</p>
-      <p>پیشگیری از دیابت نوع <span class="highlight">۲</span> شامل کاهش وزن، تغذیه متعادل، <span class="green">فعالیت بدنی</span> و مدیریت استرس است.</p>
-      <p>استفاده از دستگاه‌های CGM و اپلیکیشن‌های موبایل به پایش دقیق‌تر قند خون کمک می‌کند.</p>
-      <p>سلامت روان و حمایت اجتماعی نقش مهمی در کنترل دیابت دارند و <span class="highlight">استرس</span> می‌تواند سطح قند خون را افزایش دهد.</p>
-      <p>درمان‌های مکمل مانند مدیتیشن و یوگا ممکن است مفید باشند، اما جایگزین درمان پزشکی نیستند.</p>
-      <p>رژیم غذایی سالم شامل مصرف <span class="green">میوه</span>، <span class="green">سبزیجات</span>، پروتئین کافی و محدود کردن قند و چربی‌های ناسالم است.</p>
-      <p>ورزش روزانه حداقل ۳۰ دقیقه توصیه می‌شود و فعالیت‌های سبک تا متوسط را شامل می‌شود.</p>
-      <p>کنترل فشار خون و کلسترول برای کاهش ریسک بیماری‌های قلبی-عروقی ضروری است.</p>
-      <p>آموزش بیماران و خانواده‌ها باعث پایبندی بهتر به درمان و سبک زندگی سالم می‌شود.</p>
-      <p>معاینات منظم چشم و کلیه‌ها برای تشخیص زودهنگام عوارض بسیار مهم هستند.</p>
-      <p>گروه‌های حمایتی و مشاوره روانشناسی می‌توانند به کاهش استرس و افسردگی کمک کنند.</p>
-      <p>اندازه‌گیری HbA1c هر ۳-۶ ماه میزان کنترل بلندمدت قند خون را نشان می‌دهد.</p>
-      <p>کنترل قند خون قبل و بعد از غذا، ورزش و مصرف دارو باید دقیق انجام شود.</p>
-      <p>مراقبت از پاها برای جلوگیری از زخم‌ها و عفونت‌ها اهمیت دارد.</p>
-      <p>استفاده از یادآورها و اپلیکیشن‌ها به نظم در مصرف دارو و پایش قند کمک می‌کند.</p>
-      <p><span class="yellow">آب کافی</span>، خواب مناسب و <span class="yellow">مدیریت استرس</span> برای سلامت کلی ضروری است.</p>
-      <p>مشارکت فعال بیمار در درمان و پایش خود کلید موفقیت در کنترل دیابت است.</p>
-    </div>
+    <p>دیابت یک بیماری مزمن است که بر تنظیم قند خون تاثیر می‌گذارد. این بیماری می‌تواند عوارضی در چشم‌ها، کلیه‌ها، قلب و اعصاب ایجاد کند. منابع معتبر مانند <a href="https://www.who.int/health-topics/diabetes" target="_blank">سازمان جهانی بهداشت (WHO)</a> اطلاعات مفیدی در این زمینه ارائه کرده‌اند.</p>
+
+    <img src="diabetes-info.jpg" alt="اینفوگرافیک علائم دیابت" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:10px;">
+
   </section>
 
   <section id="diabetes-types">
-    <h2 class="blue">انواع دیابت: دیابت نوع 1، نوع 2 و دیابت بارداری</h2>
-    <p>دیابت انواع مختلفی دارد که هر کدام ویژگی‌ها و دلایل خاص خود را دارند. شناخت انواع دیابت به درک بهتر و مدیریت موثرتر این بیماری کمک می‌کند:</p>
-    <ul>
-      <li><strong>دیابت نوع 1:</strong> در این نوع دیابت، سیستم ایمنی بدن به سلول‌های تولید کننده انسولین در پانکراس حمله می‌کند و باعث تخریب آن‌ها می‌شود. در نتیجه، بدن قادر به تولید انسولین کافی نیست و فرد برای زنده ماندن نیاز به تزریق انسولین دارد.</li>
-      <li><strong>دیابت نوع 2:</strong> این نوع دیابت شایع‌ترین نوع دیابت است و معمولاً در بزرگسالان رخ می‌دهد. در دیابت نوع 2، بدن به انسولین مقاوم می‌شود و یا پانکراس قادر به تولید انسولین کافی برای غلبه بر این مقاومت نیست. عوامل ژنتیکی، چاقی و کم‌تحرکی نقش مهمی در بروز دیابت نوع 2 دارند.</li>
-      <li><strong>دیابت بارداری:</strong> این نوع دیابت در دوران بارداری رخ می‌دهد و معمولاً پس از زایمان برطرف می‌شود. دیابت بارداری می‌تواند خطر عوارض بارداری را افزایش دهد و نیاز به پایش دقیق دارد.</li>
-      <li><strong>دیابت پیش از دیابت (Prediabetes):</strong> وضعیتی است که در آن سطح قند خون بالاتر از حد طبیعی است اما هنوز به اندازه کافی بالا نیست که دیابت تشخیص داده شود. افراد مبتلا به پیش دیابت در معرض خطر بیشتری برای ابتلا به دیابت نوع 2 قرار دارند.</li>
-    </ul>
+    <h2 class="blue">انواع دیابت</h2>
+    <h3>دیابت نوع ۱</h3>
+    <p>در این نوع، سیستم ایمنی سلول‌های تولیدکننده انسولین را تخریب می‌کند. افراد نیاز به تزریق انسولین دارند.</p>
+    <h3>دیابت نوع ۲</h3>
+    <p>شایع‌ترین نوع دیابت که بیشتر در بزرگسالان رخ می‌دهد و ناشی از مقاومت به انسولین است.</p>
+    <h3>دیابت بارداری</h3>
+    <p>در دوران بارداری ایجاد می‌شود و معمولاً بعد از زایمان برطرف می‌شود، ولی نیازمند مراقبت است.</p>
+    <h3>پیش‌دیابت</h3>
+    <p>مرحله‌ای که قند خون بالاتر از حد طبیعی است اما هنوز به دیابت نرسیده. یک هشدار جدی برای تغییر سبک زندگی.</p>
   </section>
 
   <section id="diabetes-symptoms">
-    <h2 class="blue">علائم دیابت: نشانه‌های هشدار دهنده</h2>
-    <p>تشخیص زودهنگام علائم دیابت می‌تواند به پیشگیری از عوارض جدی کمک کند. برخی از علائم شایع دیابت عبارتند از:</p>
+    <h2 class="blue">علائم دیابت</h2>
     <ul>
       <li>تشنگی بیش از حد</li>
-      <li>تکرر ادرار (به خصوص در شب)</li>
+      <li>تکرر ادرار (مخصوصاً شب‌ها)</li>
       <li>خستگی و ضعف</li>
       <li>تاری دید</li>
       <li>کاهش وزن ناگهانی</li>
-      <li>بهبودی دیرهنگام زخم‌ها و بریدگی‌ها</li>
-      <li>عفونت‌های مکرر</li>
-      <li>بی‌حسی یا گزگز در دست‌ها و پاها</li>
+      <li>بهبودی دیرهنگام زخم‌ها</li>
     </ul>
-    <p>در صورت مشاهده هر یک از این علائم، به پزشک مراجعه کنید.</p>
+    <a href="#faq" class="cta-button">مشاهده سوالات متداول</a>
   </section>
 
   <section id="diabetes-prevention">
-    <h2 class="blue">پیشگیری از دیابت: چگونه از ابتلا به دیابت جلوگیری کنیم؟</h2>
-    <p>با رعایت یک سبک زندگی سالم می‌توان از ابتلا به دیابت نوع 2 جلوگیری کرد. راهکارهای پیشگیری از دیابت عبارتند از:</p>
+    <h2 class="blue">پیشگیری از دیابت نوع ۲</h2>
     <ul>
       <li>حفظ وزن سالم</li>
-      <li>رژیم غذایی سالم و متعادل (سرشار از میوه، سبزیجات و غلات کامل)</li>
-      <li>فعالیت بدنی منظم (حداقل 30 دقیقه در روز)</li>
-      <li>ترک سیگار</li>
-      <li>مدیریت استرس</li>
-      <li>خواب کافی</li>
+      <li>رژیم غذایی متعادل</li>
+      <li>فعالیت بدنی منظم (۳۰ دقیقه در روز)</li>
+      <li>مدیریت استرس و خواب کافی</li>
     </ul>
+    <a href="#diabetes-treatment" class="cta-button">روش‌های درمان</a>
   </section>
 
   <section id="diabetes-treatment">
-    <h2 class="blue">درمان دیابت: راهکارهای کنترل قند خون</h2>
-    <p>درمان دیابت شامل ترکیبی از رژیم غذایی، ورزش، دارو و پایش قند خون است. هدف از درمان دیابت، کنترل سطح قند خون و پیشگیری از عوارض جدی است. راهکارهای درمان دیابت عبارتند از:</p>
+    <h2 class="blue">درمان دیابت</h2>
     <ul>
-      <li><strong>رژیم غذایی:</strong> مصرف غذاهای سالم و متعادل، کنترل میزان کربوهیدرات، پروتئین و چربی.</li>
-      <li><strong>ورزش:</strong> فعالیت بدنی منظم به کاهش قند خون و بهبود حساسیت به انسولین کمک می‌کند.</li>
-      <li><strong>دارو:</strong> مصرف داروهای خوراکی یا تزریقی (انسولین) برای کنترل قند خون.</li>
-      <li><strong>پایش قند خون:</strong> اندازه‌گیری منظم قند خون با دستگاه گلوکومتر یا CGM.</li>
-      <li><strong>مراقبت از پاها:</strong> بررسی روزانه پاها برای جلوگیری از زخم و عفونت.</li>
+      <li><strong>رژیم غذایی:</strong> کنترل مصرف کربوهیدرات و چربی.</li>
+      <li><strong>ورزش:</strong> افزایش حساسیت به انسولین.</li>
+      <li><strong>دارو:</strong> داروهای خوراکی یا انسولین.</li>
+      <li><strong>پایش قند خون:</strong> استفاده از گلوکومتر یا CGM.</li>
     </ul>
   </section>
 
   <section id="faq">
-    <h2 class="blue">سوالات متداول درباره دیابت</h2>
+    <h2 class="blue">سوالات متداول</h2>
     <dl class="faq">
       <dt>دیابت چه انواعی دارد؟</dt>
-      <dd>دو نوع اصلی دارد: نوع <span class="highlight">۱</span> که بیشتر در کودکان و نوجوانان رخ می‌دهد (ناشی از کمبود انسولین) و نوع <span class="highlight">۲</span> که در بزرگسالان شایع است (ناشی از مقاومت به انسولین). همچنین دیابت بارداری نیز در دوران حاملگی رخ می‌دهد.</dd>
+      <dd>دیابت نوع ۱، نوع ۲ و دیابت بارداری.</dd>
       <dt>علائم دیابت چیست؟</dt>
-      <dd>تشنگی زیاد، تکرر ادرار، خستگی، تاری دید و گاهی <span class="highlight">کاهش وزن ناگهانی</span> از علائم شایع دیابت هستند. در صورت مشاهده این علائم، به پزشک مراجعه کنید.</dd>
-      <dt>چگونه می‌توان دیابت نوع <span class="highlight">۲</span> را پیشگیری کرد؟</dt>
-      <dd>با <span class="green">رژیم غذایی سالم</span>، کاهش وزن، ورزش منظم و <span class="green">مدیریت استرس</span> می‌توان خطر ابتلا به دیابت نوع 2 را کاهش داد.</dd>
-      <dt>درمان دیابت چگونه است؟</dt>
-      <dd>کنترل دیابت شامل <span class="green">رژیم غذایی</span>، فعالیت بدنی، دارو و پایش مرتب قند خون است. هدف از درمان، کنترل سطح قند خون و پیشگیری از عوارض دیابت است.</dd>
-      <dt>آیا درمان‌های مکمل مفید هستند؟</dt>
-      <dd>درمان‌های مکمل مانند مدیتیشن و یوگا می‌توانند به کاهش استرس و بهبود کیفیت زندگی کمک کنند، اما جایگزین درمان پزشکی نیستند. قبل از استفاده از درمان‌های مکمل، با پزشک خود مشورت کنید.</dd>
+      <dd>تشنگی زیاد، تکرر ادرار، خستگی و کاهش وزن ناگهانی.</dd>
+      <dt>چگونه می‌توان از دیابت نوع ۲ پیشگیری کرد؟</dt>
+      <dd>با رژیم غذایی سالم، ورزش و مدیریت استرس.</dd>
     </dl>
   </section>
 
-  <!-- بخش نظرات کاربران -->
   <section id="testimonials">
     <h2 class="blue">نظرات کاربران</h2>
     <div id="testimonials-list"></div>
-
-    <form class="testimonial-form" id="testimonialForm">
+    <form id="testimonialForm">
       <input type="text" id="name" placeholder="نام شما" required>
       <textarea id="comment" placeholder="نظر شما..." rows="3" required></textarea>
       <button type="submit">ارسال نظر</button>
@@ -231,11 +179,11 @@
   </section>
 
   <footer>
-    از توجه شما به سایت و مطالب آن ممنونم | ابوالفضل شاهمیرزایی | تابستان ۱۴۰۴
+    © ابوالفضل شاهمیرزایی | تابستان ۱۴۰۴
   </footer>
 
   <script>
-    // نمایش تاریخ و ساعت
+    // تاریخ و ساعت زنده
     function updateDateTime() {
       const now = new Date();
       const options = { year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
@@ -244,10 +192,9 @@
     setInterval(updateDateTime, 1000);
     updateDateTime();
 
-    // ذخیره و نمایش نظرات در localStorage
+    // ذخیره نظرات
     const testimonialsDiv = document.getElementById('testimonials-list');
     const form = document.getElementById('testimonialForm');
-
     function loadTestimonials() {
       const stored = JSON.parse(localStorage.getItem('testimonials') || '[]');
       testimonialsDiv.innerHTML = '';
@@ -258,7 +205,6 @@
         testimonialsDiv.appendChild(div);
       });
     }
-
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
@@ -271,8 +217,41 @@
         form.reset();
       }
     });
-
     loadTestimonials();
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "دیابت چه انواعی دارد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "دیابت نوع ۱، نوع ۲ و دیابت بارداری."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "علائم دیابت چیست؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "تشنگی زیاد، تکرر ادرار، خستگی و کاهش وزن ناگهانی."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "چگونه می‌توان از دیابت نوع ۲ پیشگیری کرد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "با رژیم غذایی سالم، ورزش و مدیریت استرس."
+        }
+      }
+    ]
+  }
   </script>
 
 </body>
